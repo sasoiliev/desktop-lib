@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="60"
+   width="60"
+   _SVGFile__filename="oldscale/devices/ksim_cpu.svg"
+   version="1.0"
+   y="0"
+   x="0"
+   id="svg1"
+   sodipodi:version="0.32"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="memory.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.219474"
+     inkscape:cx="10.151827"
+     inkscape:cy="19.67202"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:current-layer="svg1"
+     showgrid="false"
+     inkscape:window-maximized="0" />
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient772">
+      <stop
+         style="stop-color: #000000;stop-opacity: 1.0;"
+         id="stop773"
+         offset="0" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         id="stop774"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient772"
+       id="linearGradient775" />
+  </defs>
+  <metadata
+     id="metadata24">
+    <RDF
+       id="RDF25">
+      <Work
+         about=""
+         id="Work26">
+        <title
+           id="title27">Part of the Flat Icon Collection (Thu Aug 26 14:39:51 2004)</title>
+        <description
+           id="description29" />
+        <subject
+           id="subject30">
+          <Bag
+             id="Bag31">
+            <li
+               id="li32" />
+          </Bag>
+        </subject>
+        <publisher
+           id="publisher33">
+          <Agent
+             about=""
+             id="Agent34">
+            <title
+               id="title35" />
+          </Agent>
+        </publisher>
+        <creator
+           id="creator36">
+          <Agent
+             about=""
+             id="Agent37">
+            <title
+               id="title38">Danny Allen</title>
+          </Agent>
+        </creator>
+        <rights
+           id="rights40">
+          <Agent
+             about=""
+             id="Agent41">
+            <title
+               id="title42">Danny Allen</title>
+          </Agent>
+        </rights>
+        <date
+           id="date44" />
+        <format
+           id="format45">image/svg+xml</format>
+        <type
+           id="type47"
+           resource="http://purl.org/dc/dcmitype/StillImage" />
+        <license
+           id="license48"
+           resource="http://creativecommons.org/licenses/LGPL/2.1/">
+          <date
+             id="date49" />
+        </license>
+        <language
+           id="language50">en</language>
+      </Work>
+    </RDF>
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     inkscape:connector-curvature="0"
+     id="rect1037"
+     d="m 20.460966,11.082142 c -0.687553,0 -1.241081,0.966771 -1.241081,2.167647 v 33.500422 c 0,1.200876 0.553528,2.167647 1.241081,2.167647 h 19.180599 c 0.687559,0 1.241082,-0.966771 1.241082,-2.167647 V 13.249789 c 0,-1.200876 -0.553523,-2.167647 -1.241082,-2.167647 z"
+     style="font-size:12px;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <g
+     id="g5626">
+    <rect
+       y="15.35129"
+       x="42.430759"
+       height="3.5"
+       width="5.3211002"
+       id="rect5532-3"
+       style="stroke-width:2.84844303;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       y="23.95043"
+       x="42.430759"
+       height="3.5"
+       width="5.3211002"
+       id="rect5532-6-1"
+       style="stroke-width:2.84844303;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       y="32.549568"
+       x="42.430759"
+       height="3.5"
+       width="5.3211002"
+       id="rect5532-1-9"
+       style="stroke-width:2.84844303;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       y="41.148708"
+       x="42.430759"
+       height="3.5"
+       width="5.3211002"
+       id="rect5532-2-4"
+       style="stroke-width:2.84844303;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+  <g
+     transform="translate(-30.270286)"
+     id="g5626-7">
+    <rect
+       y="15.35129"
+       x="42.430759"
+       height="3.5"
+       width="5.3211002"
+       id="rect5532-3-8"
+       style="stroke-width:2.84844303;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       y="23.95043"
+       x="42.430759"
+       height="3.5"
+       width="5.3211002"
+       id="rect5532-6-1-4"
+       style="stroke-width:2.84844303;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       y="32.549568"
+       x="42.430759"
+       height="3.5"
+       width="5.3211002"
+       id="rect5532-1-9-5"
+       style="stroke-width:2.84844303;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       y="41.148708"
+       x="42.430759"
+       height="3.5"
+       width="5.3211002"
+       id="rect5532-2-4-0"
+       style="stroke-width:2.84844303;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+</svg>
