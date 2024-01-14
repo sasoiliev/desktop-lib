@@ -8,7 +8,7 @@
       nerdtree
       vim-airline
       vim-airline-themes
-      colors-solarized
+      vim-colors-solarized
     ];
     extraConfig = import ./vimrc.nix;
   };

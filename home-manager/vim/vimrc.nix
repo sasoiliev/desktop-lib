@@ -1,5 +1,7 @@
 ''
+  syntax enable
   set background=dark
+  let g:solarized_termcolors=256
   colorscheme solarized
   let g:airline_theme='solarized'
   let g:airline_solarized_bg='dark'
