@@ -25,6 +25,7 @@ let
     import XMonad.Layout.Spacing
     import XMonad.Layout.Gaps
     import XMonad.Layout.Tabbed
+    import XMonad.Layout.Reflect
     import XMonad.Util.Run
     import XMonad.Util.NamedScratchpad
     import XMonad.Actions.FocusNth
@@ -106,7 +107,7 @@ ${withMessengers
         wide    =
               smartBorders (
                 ifMax 1 (withGaps 960 960 Full) (
-                  ifMax 2 (withGaps 480 480 tiled) (
+                  ifMax 2 (withGaps 480 480 (reflectHoriz $ tiled)) (
                     withGaps 40 40 (ThreeColMid 1 (3/100) (4/10))
                   )
                 )
