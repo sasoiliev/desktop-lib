@@ -27,7 +27,6 @@
     "hid_apple.swap_fn_leftctrl=1"
     "mem_sleep_default=deep"
   ];
-  boot.kernelPackages = pkgs.linuxPackages_5_10;
   boot.extraModprobeConfig = ''
     options dell-smm-hwmon ignore_dmi=1
   '';
