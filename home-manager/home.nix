@@ -91,6 +91,7 @@ in
     iosevka-comfy.comfy
     iosevka-comfy.comfy-duo
     iosevka-comfy.comfy-fixed
+    wireshark termshark
   ];
 
   # Disable home-manager keyboard management to reset of avoid Xkb options on
