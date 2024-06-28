@@ -92,6 +92,7 @@ in
     iosevka-comfy.comfy-duo
     iosevka-comfy.comfy-fixed
     wireshark termshark
+    pinentry-gtk2
   ];
 
   # Disable home-manager keyboard management to reset of avoid Xkb options on
@@ -268,6 +269,7 @@ in
       # are done in parallel without this option some requests fail to
       # allocate memory.
       auto-expand-secmem
+      pinentry-program ${pkgs.pinentry-gtk2}/bin/pinentry-gtk-2
     '';
   };
 
