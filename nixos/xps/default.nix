@@ -47,6 +47,10 @@
     pools = [ "rpool" ];
   };
 
+  services.udev.packages = [
+    pkgs.android-udev-rules
+  ];
+
   networking = {
     hostName = "xps";
     hostId = "f0c288d6";
