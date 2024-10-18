@@ -1,4 +1,4 @@
-{ config, lib, pkgs, pkgs-unstable, nurpkgs, ... }:
+{ config, lib, pkgs, pkgs-unstable, nurpkgs, self-pkgs, ... }:
 
 let
 
@@ -292,6 +292,9 @@ in
     ${xidlehook}/bin/xidlehook \
       --socket ${xidlehookSocket} \
       --not-when-fullscreen \
+      --timer 30 \
+        '${self-pkgs.if-at-edge}/bin/if-at-edge -d -t 5 S -- ${xidlehook}/bin/xidlehook-client --socket ${xidlehookSocket} reset-idle' \
+        ''' \
       --timer 600 \
         'xrandr --output "$PRIMARY_DISPLAY" --brightness .3' \
         'xrandr --output "$PRIMARY_DISPLAY" --brightness 1' \
@@ -302,6 +305,8 @@ in
     # Disable X11 screensaver setting.
     xset s off
     ${xss-lock}/bin/xss-lock -- $HOME/.lock-screen &
+    ${xdotool}/bin/xdotool behave_screen_edge --delay 3 bottom-left \
+      exec ${xidlehook}/bin/xidlehook-client --socket /run/user/$UID/xidlehook.sock reset-idle &
   '';
 
 #  xresources.extraConfig = builtins.readFile (
@@ -345,7 +350,7 @@ in
       "super + {r}" = "rofi -show run";
       "super + {w}" = browser;
       "super + shift + {w}" = "${browser} --private-window";
-      "ctrl + alt + {l}" = "xidlehook-client --socket ${xidlehookSocket} control --action trigger --timer 1";
+      "ctrl + alt + {l}" = "xidlehook-client --socket ${xidlehookSocket} control --action trigger --timer 2";
       "Print" = "flameshot gui";
       "super + shift + {p}" = "flameshot gui";
       "ctrl + shift + Escape" = "${terminal} -e top";

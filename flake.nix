@@ -12,10 +12,18 @@
   outputs = { nixpkgs, ... }:
     {
       users = import ./users;
-      homeManagerModules = [ (import ./home-manager/home.nix) (import ./home-manager/local.nix) ];
+      homeManagerModules = [
+        (import ./home-manager/home.nix)
+        (import ./home-manager/local.nix)
+      ];
       nixosConfigurations.xps = system: nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ ./nixos/all.nix ./nixos/graphical.nix ./nixos/xps ];
+      };
+      packages = let
+        system = "x86_64-linux";
+      in {
+        ${system}."if-at-edge" = (import nixpkgs { inherit system; }).callPackage (import ./pkgs/if-at-edge) {};
       };
     };
 }
