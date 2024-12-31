@@ -98,7 +98,7 @@ ${withMessengers
           , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 
     myLayoutHook =
-      ifWider 1920 (mkLayout wide) (mkLayout narrow)
+      ifWider 2256 (mkLayout wide) (mkLayout narrow)
       where
         mkLayout l =
           spacingRaw True (Border 0 0 0 0) False (Border 3 3 3 3) True $ avoidStruts l
