@@ -23,6 +23,8 @@
       config.enable_scroll_bar = true
       config.enable_tab_bar = false
       config.hide_tab_bar_if_only_one_tab = true
+      -- Fix for: https://github.com/wez/wezterm/issues/5990
+      config.front_end = "WebGpu"
 
       config.keys =
         { { key = 'c'

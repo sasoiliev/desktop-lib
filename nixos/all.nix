@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, pkgs-23_11, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -18,7 +18,7 @@
     lynx
     xterm
     dmenu
-    rxvt_unicode # needed for root TERM compatibility
+    rxvt-unicode-unwrapped # needed for root TERM compatibility
     networkmanagerapplet
     pavucontrol
     system-config-printer
@@ -47,7 +47,6 @@
   services.printing.enable = true;
   services.printing.drivers = [ pkgs.samsung-unified-linux-driver ];
 
-  sound.enable = false;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire.enable = true;
@@ -56,19 +55,21 @@
   services.pipewire.wireplumber.enable = true;
 
   services.autorandr.enable = true;
+  services.libinput = {
+    enable = true;
+    touchpad.naturalScrolling = true;
+    touchpad.disableWhileTyping = true;
+    mouse.naturalScrolling = false;
+    mouse.accelSpeed = "1.0";
+  };
   services.xserver = {
     enable = true;
     displayManager.lightdm.enable = true;
     displayManager.lightdm.greeters.gtk.enable = true;
     windowManager.xmonad.enable = true;
-    libinput.enable = true;
-    libinput.touchpad.naturalScrolling = true;
-    libinput.touchpad.disableWhileTyping = true;
-    libinput.mouse.naturalScrolling = false;
-    libinput.mouse.accelSpeed = "1.0";
-    layout = "us,bg";
-    xkbVariant = ",phonetic";
-    xkbOptions = "grp:alt_shift_toggle,caps:swapescape";
+    xkb.layout = "us,bg";
+    xkb.variant = ",phonetic";
+    xkb.options = "grp:alt_shift_toggle,caps:swapescape";
   };
 
   services.udev.packages = [ pkgs.yubikey-personalization ];
@@ -78,6 +79,7 @@
   services.blueman.enable = true;
   hardware.bluetooth.enable = true;
   hardware.bluetooth.settings.General.Enable = "Source,Sink,Media,Socket";
+  hardware.bluetooth.package = pkgs-23_11.bluez;
 
   # Workaround for binaries downloaded from the Internet such as
   # the protoc compiler.

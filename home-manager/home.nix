@@ -63,7 +63,6 @@ in
     keepassxc
     fontconfig
     htop
-    urxvt_perls urxvt_font_size xclip
     thunderbird
     xmobar
     libreoffice
@@ -364,7 +363,7 @@ in
       "ctrl + grave" = "${pkgs.dunst}/bin/dunstctl close";
       "ctrl + alt + grave" = "${pkgs.dunst}/bin/dunstctl history-pop";
       "{XF86AudioMute,XF86AudioLowerVolume,XF86AudioRaiseVolume}" =
-        "${pkgs.alsaUtils}/bin/amixer {set Master toggle,sset Master 7%-,sset Master 7%+}";
+        "${pkgs.alsa-utils}/bin/amixer {set Master toggle,sset Master 7%-,sset Master 7%+}";
       # source: https://fabianlee.org/2016/05/25/ubuntu-enabling-media-keys-for-spotify/
       "{XF86AudioPlay,XF86AudioNext,XF86AudioPrev}" =
         "${pkgs.playerctl}/bin/playerctl {play-pause,next,previous}";

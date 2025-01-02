@@ -89,5 +89,9 @@
     ];
   };
 
+  services.fprintd.enable = true;
+
+  services.resolved.enable = true;
+
   system.stateVersion = "20.03";
 }

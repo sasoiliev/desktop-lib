@@ -104,7 +104,7 @@ void exec_if_within_tolerance(
     char *newargv[],
     bool debug_enabled
 ) {
-    debug(debug_enabled, "Root window size: %dx%d\n", root_window_size.w, root_window_size.w);
+    debug(debug_enabled, "Root window size: %dx%d\n", root_window_size.w, root_window_size.h);
     debug(debug_enabled, "Cursor position: x: %d; y: %d\n", cursor_position.x, cursor_position.y);
 
     int border;
