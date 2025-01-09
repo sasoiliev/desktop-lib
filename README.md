@@ -6,11 +6,6 @@ This repository contains my [NixOS][1] desktop configuration.
 The `nixos/` directory contains a NixOS configuration, while the
 `home-manager/` directory contains a [Home Manager][2] configuration.
 
-The code in this project is heavily based on the `mamul.org:mamul.org.git`
-Git repository, specifically the `machines/xps-7390` and `profiles`
-directories. Refer to this project's history for context how the code
-had developed historically.
-
 Requirements
 ------------
 
