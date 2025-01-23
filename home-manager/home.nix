@@ -359,7 +359,7 @@ in
       "super + F8" = "$HOME/.bin/show-qr";
       "XF86Eject" = "rofi -show window";
       "super + XF86Eject" = "systemctl suspend -i";
-      "super + e" = "${pkgs.pcmanfm}/bin/pcmanfm";
+      "super + e" = "${pkgs.nautilus}/bin/nautilus";
       "ctrl + grave" = "${pkgs.dunst}/bin/dunstctl close";
       "ctrl + alt + grave" = "${pkgs.dunst}/bin/dunstctl history-pop";
       "{XF86AudioMute,XF86AudioLowerVolume,XF86AudioRaiseVolume}" =
