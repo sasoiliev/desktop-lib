@@ -84,7 +84,7 @@ in
     chromium
     remmina
     arandr
-    yubikey-manager yubikey-manager-qt yubikey-personalization yubioath-flutter
+    yubikey-manager yubikey-personalization yubioath-flutter
     gimp imagemagick inkscape
     iosevka
     iosevka-comfy.comfy
