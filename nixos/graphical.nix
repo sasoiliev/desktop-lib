@@ -11,4 +11,6 @@
   environment.systemPackages = with pkgs; [
     firefox
   ];
+
+  security.pam.services.i3lock.enable = true;
 }
